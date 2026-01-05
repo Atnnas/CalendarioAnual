@@ -117,6 +117,8 @@ document.addEventListener("DOMContentLoaded", () => {
     // Month is 0-indexed (Jan = 0, Sept = 8, Oct = 9)
     generateMiniCalendar('cal-juegos', 0, 2026, 18, 22, 'national');
     generateMiniCalendar('cal-kuma', 4, 2026, 3, 3, 'national'); // Added Copa Kuma
+    generateMiniCalendar('cal-kurobi', 5, 2026, 27, 28, 'national'); // Added Copa Kurobi
+    generateMiniCalendar('cal-sarchi', 7, 2026, 9, 9, 'national'); // Added Copa Sarchi
     generateMiniCalendar('cal-youth', 8, 2026, 17, 20, 'international');
     generateMiniCalendar('cal-iskf', 9, 2026, 23, 25, 'international'); // Added ISKF event
 
