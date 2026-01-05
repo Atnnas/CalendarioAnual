@@ -1,0 +1,105 @@
+/* Custom Base Styles */
+body {
+    background-color: #050505;
+    /* Deep rich black */
+}
+
+/* Custom Selection Color */
+::selection {
+    background-color: #D90429;
+    color: white;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0a0a0a;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #333;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #D90429;
+}
+
+/* Text Shadow Utilities */
+.text-shadow-red {
+    text-shadow: 0 0 20px rgba(217, 4, 41, 0.6);
+}
+
+.text-shadow-gold {
+    text-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
+}
+
+/* Connector Line Animation readiness */
+.event-card.national .connector-line {
+    transform-origin: left center;
+    transform: scaleX(0);
+}
+
+.event-card.international .connector-line {
+    transform-origin: right center;
+    transform: scaleX(0);
+}
+
+/* Date Marker Glow */
+.date-marker {
+    box-shadow: 0 0 15px rgba(217, 4, 41, 0.3);
+    transition: all 0.3s ease;
+}
+
+.date-marker:hover {
+    box-shadow: 0 0 25px rgba(255, 215, 0, 0.6);
+    border-color: #FFD700;
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+/* Glassmorphism Card refinement */
+
+/* Mini Calendar Styles */
+.mini-calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 4px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.calendar-day-header {
+    text-align: center;
+    font-size: 0.7rem;
+    color: #666;
+    font-weight: bold;
+}
+
+.calendar-day {
+    text-align: center;
+    font-size: 0.8rem;
+    padding: 4px 0;
+    border-radius: 4px;
+    color: #888;
+}
+
+.calendar-day.active-national {
+    background-color: #D90429;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(217, 4, 41, 0.4);
+}
+
+.calendar-day.active-international {
+    background-color: #FFD700;
+    color: #0a0a0a;
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.4);
+}
+
+.calendar-day.empty {
+    background: transparent;
+}
